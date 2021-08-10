@@ -1,6 +1,6 @@
 {
   "name": "cybexjs-ws",
-  "version": "1.1.14",
+  "version": "1.1.9",
   "description": "the websocket utils for Cybex. Forked from bitsharesjs-ws, fit for Cybex.",
   "main": "index.js",
   "scripts": {
@@ -13,11 +13,7 @@
   "author": "CybexDEX",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/preset-env": "^7.2.3",
-    "babel-loader": "^8.0.4",
-    "webpack": "^4.28.3",
-    "webpack-cli": "^3.2.0",
+    "webpack": "^3.10.0",
     "ws": "^3.3.2"
   }
 }

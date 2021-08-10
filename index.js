@@ -3258,7 +3258,7 @@ const ADDRESS_PREFIX = "TREC";
 
 const PREFIX_OF_CHAIN = {
     "39f5e2ede1f8bc1a3a54a7914414e3779e33193f1f5693510e73cb7a87617447": "TEST",
-    "362d15a329a47f87f7b3b479704a0aa6c50c6cfd589ee2e776adaec3e9cb42d8": "TREC"
+    "c175ba779e8586412b419335b8d0ee9ae0ffea1ca036b61a9a38bbd19327ce09": "TREC"
 };
 
 const Network = class {
@@ -3296,7 +3296,7 @@ _this = {
             "BTS"
         ),
         Cybex: new Network(
-            "362d15a329a47f87f7b3b479704a0aa6c50c6cfd589ee2e776adaec3e9cb42d8",
+            "c175ba779e8586412b419335b8d0ee9ae0ffea1ca036b61a9a38bbd19327ce09",
             ADDRESS_PREFIX
         ),
         CybexTest: new Network(

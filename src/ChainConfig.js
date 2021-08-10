@@ -1,9 +1,10 @@
 let _this;
 
-const ADDRESS_PREFIX = "TREC"; // 修改此处会修改包括各种key生成在内的前缀；
+const ADDRESS_PREFIX = "TREC";
 
 const PREFIX_OF_CHAIN = {
-    "362d15a329a47f87f7b3b479704a0aa6c50c6cfd589ee2e776adaec3e9cb42d8": "TREC"
+    "39f5e2ede1f8bc1a3a54a7914414e3779e33193f1f5693510e73cb7a87617447": "TEST",
+    "c175ba779e8586412b419335b8d0ee9ae0ffea1ca036b61a9a38bbd19327ce09": "TREC"
 };
 
 const Network = class {
@@ -28,24 +29,16 @@ let ecc_config = {
 _this = {
     core_asset: "CORE",
     address_prefix: ADDRESS_PREFIX,
-    expire_in_secs: 45,
+    expire_in_secs: 15,
     expire_in_secs_proposal: 24 * 60 * 60,
     review_in_secs_committee: 24 * 60 * 60,
     networks: {
-        BitShares: new Network(
-            "4018d7844c78f6a6c41c6a552b898022310fc5dec06da467ee7905a8dad512c8",
-            "BTS"
-        ),
-        CybexOpen: new Network(
-            "d3011619ed40beb302e3ef32b527fa36b89594d93b885fb226230988b47a12c5",
-            "BTS"
-        ),
         Cybex: new Network(
-            "362d15a329a47f87f7b3b479704a0aa6c50c6cfd589ee2e776adaec3e9cb42d8",
+            "c175ba779e8586412b419335b8d0ee9ae0ffea1ca036b61a9a38bbd19327ce09",
             ADDRESS_PREFIX
         ),
         CybexTest: new Network(
-            "133572a395d5b12c7db7f2d5f0dadd347b68ccbd996defafcb5768954c6d46c5",
+            "c175ba779e8586412b419335b8d0ee9ae0ffea1ca036b61a9a38bbd19327ce09",
             ADDRESS_PREFIX
         ),
         Muse: new Network(
@@ -53,14 +46,9 @@ _this = {
             "MUSE"
         ),
         Test: new Network(
-            "362d15a329a47f87f7b3b479704a0aa6c50c6cfd589ee2e776adaec3e9cb42d8",
+            "39f5e2ede1f8bc1a3a54a7914414e3779e33193f1f5693510e73cb7a87617447",
             "TEST"
-        ),
-        Obelisk: {
-            core_asset: "GOV",
-            address_prefix: "FEW",
-            chain_id: "1cfde7c388b9e8ac06462d68aadbd966b58f88797637d9af805b4560b0e9661e"
-        }
+        )
     },
 
     /** Set a few properties for known chain IDs. */
